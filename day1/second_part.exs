@@ -15,6 +15,6 @@ end)
     first
     |> Enum.map(fn x -> x * Map.get(group, x, 0) end)
     |> Enum.sum()
-    |> IO.inspect()
   end
 end)
+|> IO.inspect()
